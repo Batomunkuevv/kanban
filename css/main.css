@@ -1,0 +1,26 @@
+.kanban__wrap {
+  position: relative;
+  width: 100%;
+}
+
+.kanban {
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  transition: .5s ease-out;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: auto;
+  }
+
+  .kanban {
+    display: flex;
+  }
+
+  .kanban__column {
+    width: 224px;
+  }
+}

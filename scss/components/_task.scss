@@ -1,0 +1,153 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__date {
+        margin-bottom: -3px;
+        color: $colorGrayFont;
+        font-size: 10px;
+        line-height: toProcent(10, 14);
+    }
+
+    &__title {
+        font-size: 12px;
+        line-height: toProcent(12, 14);
+    }
+
+    &__description {
+        color: $colorGrayFont;
+        font-size: 10px;
+        line-height: toProcent(10, 14);
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 4px;
+    }
+
+    &__tag {
+        padding: 4px 10px;
+        height: 22px;
+        font-size: 10px;
+        line-height: toProcent(10, 14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        background: #fff5f3;
+        border-radius: 22px;
+
+        &--red {
+            color: $colorRed;
+        }
+    }
+
+    &__price {
+        padding-top: 8px;
+        border-top: 1px solid #e4e5e5;
+        text-align: right;
+    }
+
+    &__status {
+        font-size: 10px;
+        line-height: toProcent(10, 14);
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            font-size: 10px;
+            line-height: toProcent(10, 14);
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                flex: none;
+            }
+
+            &-text {
+                &--todo {
+                    & span {
+                        color: $colorFont;
+                    }
+                }
+            }
+        }
+    }
+
+    &__people {
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &--red {
+            &::before {
+                background: $colorRed;
+            }
+        }
+
+        &--yellow {
+            &::before {
+                background: $colorYellow;
+            }
+        }
+
+        &--blue {
+            &::before {
+                background: $colorBlue;
+            }
+        }
+
+        &--green {
+            &::before {
+                background: $colorGreen;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex: none;
+        }
+    }
+
+    &__peoples {
+        display: flex;
+
+        &-item {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            overflow: hidden;
+
+            &:not(:last-child) {
+                margin-right: -12px;
+            }
+        }
+    }
+
+    &__comment {
+        padding: 5px 8px;
+        border: 1px solid #e4e5e5;
+        font-weight: 400;
+        border-radius: 4px;
+    }
+}

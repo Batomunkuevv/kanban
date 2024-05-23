@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <main class="app">
+      <div class="container">
+        <div class="kanban__wrap">
+          <div class="kanban">
+            <div class="kanban__column">
+              <div class="kanban__header">
+                <div class="kanban__header-title kanban__header-title--common">
+                  <span class="kanban__header-title-text">Общий список задач</span>
+                  <span class="kanban__header-title-count">23</span>
+                </div>
+                <button class="kanban__header-plus kanban__header-plus--common">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.37501 6.62497H0.583344V5.37501H5.37501V0.583344H6.62497V5.37501H11.4166V6.62497H6.62497V11.4166H5.37501V6.62497Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="kanban__list kanban__list--common" data-num="0">
+                <li draggable="true" class="kanban__item">
+                  <div class="task">
+                    <p class="task__date">Задача 1 от 01.03.24</p>
+                    <h3 class="task__title">Распечатать и подписать документы по проекту</h3>
+                    <p class="task__description">Омега, БАНК МОСКВА-СИТИ, БАНК МОСКВА-СИТИ</p>
+                    <ul class="task__tags">
+                      <li class="task__tag task__tag--red">Важно</li>
+                    </ul>
+                    <p class="task__status">Общий список задач</p>
+                    <ul class="task__info">
+                      <li class="task__info-item">
+                        <span class="task__info-item-icon">
+                          <img src="./images/calendar.svg" alt="Calendar" title="Calendar" />
+                        </span>
+                        <span class="task__info-item-text"> 2 дн. </span>
+                      </li>
+                      <li class="task__info-item">
+                        <span class="task__info-item-icon">
+                          <img src="./images/todo.svg" alt="Calendar" title="Calendar" />
+                        </span>
+                        <span class="task__info-item-text task__info-item-text--todo"> 1<span>/7</span> </span>
+                      </li>
+                    </ul>
+                    <div class="task__people task__people--green">Немаляева С.П.</div>
+                    <ul class="task__peoples">
+                      <li class="task__peoples-item">
+                        <img width="32" height="32" src="./images/people.jpg" alt="People" title="People" />
+                      </li>
+                      <li class="task__peoples-item">
+                        <img width="32" height="32" src="./images/people-2.jpg" alt="People" title="People" />
+                      </li>
+                      <li class="task__peoples-item">
+                        <img width="32" height="32" src="./images/people-3.jpg" alt="People" title="People" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="kanban__column">
+              <div class="kanban__header">
+                <div class="kanban__header-title kanban__header-title--day">
+                  <span class="kanban__header-title-text">План на день</span>
+                  <span class="kanban__header-title-count">23</span>
+                </div>
+                <button class="kanban__header-plus kanban__header-plus--day">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.37501 6.62497H0.583344V5.37501H5.37501V0.583344H6.62497V5.37501H11.4166V6.62497H6.62497V11.4166H5.37501V6.62497Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="kanban__list kanban__list--day" data-num="1">
+                <li draggable="true" class="kanban__item kanban__item1">
+                  <div class="task">
+                    <h3 class="task__title">Сервер</h3>
+                    <ul class="task__tags">
+                      <li class="task__tag task__tag--red">Новый проект</li>
+                    </ul>
+                    <p class="task__price">1 000 000,00</p>
+                    <p class="task__status">Новая</p>
+                    <ul class="task__info">
+                      <li class="task__info-item">
+                        <span class="task__info-item-icon">
+                          <img src="./images//calendar.svg" alt="Calendar" title="Calendar" />
+                        </span>
+                        <span class="task__info-item-text"> 2 дн. </span>
+                      </li>
+                    </ul>
+                    <div class="task__people task__people--blue">Немаляева С.П.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="kanban__column">
+              <div class="kanban__header">
+                <div class="kanban__header-title kanban__header-title--week">
+                  <span class="kanban__header-title-text">План на неделю</span>
+                  <span class="kanban__header-title-count">23</span>
+                </div>
+                <button class="kanban__header-plus kanban__header-plus--week">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.37501 6.62497H0.583344V5.37501H5.37501V0.583344H6.62497V5.37501H11.4166V6.62497H6.62497V11.4166H5.37501V6.62497Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="kanban__list kanban__list--week" data-num="2">
+                <li draggable="true" class="kanban__item">
+                  <div class="task">
+                    <h3 class="task__title">Анна</h3>
+                    <p class="task__price">30 000,00 RUB</p>
+                    <p class="task__status">Новый</p>
+                    <ul class="task__info">
+                      <li class="task__info-item">
+                        <span class="task__info-item-icon">
+                          <img src="./images//calendar.svg" alt="Calendar" title="Calendar" />
+                        </span>
+                        <span class="task__info-item-text"> 1 дн. </span>
+                      </li>
+                    </ul>
+                    <div class="task__people task__people--yellow">Немаляева С.П.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="kanban__column">
+              <div class="kanban__header">
+                <div class="kanban__header-title kanban__header-title--complete">
+                  <span class="kanban__header-title-text">Выполнено</span>
+                  <span class="kanban__header-title-count">23</span>
+                </div>
+                <button class="kanban__header-plus kanban__header-plus--complete">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.37501 6.62497H0.583344V5.37501H5.37501V0.583344H6.62497V5.37501H11.4166V6.62497H6.62497V11.4166H5.37501V6.62497Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="kanban__list kanban__list--complete" data-num="3">
+                <li draggable="true" class="kanban__item">
+                  <div class="task">
+                    <h3 class="task__title">Продажа товаров предоплата №001 от 11.09.2020</h3>
+                    <p class="task__description">Омега</p>
+                    <p class="task__status">Действует</p>
+                    <ul class="task__info">
+                      <li class="task__info-item">
+                        <span class="task__info-item-icon">
+                          <img src="./images//calendar.svg" alt="Calendar" title="Calendar" />
+                        </span>
+                        <span class="task__info-item-text"> 368 дн. </span>
+                      </li>
+                    </ul>
+                    <div class="task__people task__people--red">Иванов П. С.</div>
+                    <p class="task__comment">Не забыть сделать во время! Затем сохранить и отправить клиенту на почту
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script defer src="js/script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.container {
+   width: 960px;
+    margin: 0 auto;
+    padding: 0 8px;
+
+}
