@@ -99,6 +99,8 @@
 
   let element = document.querySelectorAll('.kanban__item');
   let parents = document.querySelectorAll('.kanban__list');
+  let box = document.querySelector('.kanban');
+  let wrapper = document.querySelector('.app-wrapper');
   let num = null;
 
   let x1 = null;
@@ -120,6 +122,13 @@
     });
     return num;
   }
+
+  function adaptiveHeight() {
+    let heightBox = box.offsetHeight
+    wrapper.style.height = heightBox + 100 + 'px';
+
+  }
+  adaptiveHeight();
 
 
 
@@ -271,7 +280,7 @@
       }
     }
 
-
+    adaptiveHeight();
     x1 = null;
     y1 = null;
   }
